@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colors, borderRadius } from "../../styles/global";
+import { colors, borderRadius } from "../styles/global";
 const styles = StyleSheet.create({
   container: {
     flex: 1,

@@ -1,10 +1,10 @@
 import { ImageBackground, View } from "react-native";
-import { Avatar, RegistrationForm, Title } from "../../components";
-import images from "../../utils/images";
+import { Avatar, AuthorizationForm, Title } from "../components";
+import { images } from "../utils";
 
-import styles from "./RegistrationScreenStyles";
+import styles from "./ScreenStyles";
 
-const RegistrationScreen = () => {
+const LoginScreen = () => {
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -15,11 +15,11 @@ const RegistrationScreen = () => {
 
       <View style={styles.contentContainer}>
         <Avatar />
-        <Title text="Реєстрація" />
-        <RegistrationForm />
+        <Title text="Увійти" />
+        <AuthorizationForm />
       </View>
     </View>
   );
 };
 
-export default RegistrationScreen;
+export default LoginScreen;

@@ -1,6 +1,7 @@
 import { ActivityIndicator } from "react-native";
-import RegistrationScreen from "./screens/RegistrationScreen/RegistrationScreen";
-import useRobotoFonts from "./utils/useFonts";
+
+import useRobotoFonts from "./hooks/useFonts";
+import RegistrationScreen from "./screens/RegistrationScreen";
 
 export default function App() {
   const fontsLoaded = useRobotoFonts();
@@ -9,9 +10,5 @@ export default function App() {
     return <ActivityIndicator size="large" />;
   }
 
-  return (
-    <>
-      <RegistrationScreen />
-    </>
-  );
+  return <RegistrationScreen />;
 }
